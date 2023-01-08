@@ -16,15 +16,18 @@
 .header{
     background-color:rgba(244, 244, 244, 1);
     padding: 40px 20px;
+    flex-direction: row;
 }
 
 .header-pic{
-    display: block;
+    display: flex;
     margin: auto 600px;
+    height: auto;
+    max-width: 50%;
 }
 
 .header-text-para{
-    position: absolute;
+    position: relative;
     background: rgba(101, 117, 19, 1);
     width: 35%;
     padding: 25px 43px;
@@ -55,8 +58,15 @@
     margin-left: 360px;
 }
 
+/*
+2nd section
+*/
+
 .menu-section__title{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
     padding: 50px 0px;
     color: rgba(88, 96, 49, 1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -70,10 +80,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: -40px 300px;
 }
-
-/*
-2nd section
-*/
 
 .box-section{
     display: block;
@@ -104,9 +110,9 @@
 
 .box-section__para{
     padding: 0px 100px;
+    width: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(137, 140, 123, 1);
-    width: 50%;
     line-height: 20px;
 }
 
@@ -124,7 +130,6 @@
 .box-section__image{
     float: right;
     width: 30%;
-    display: inline-block;
     margin: -277px 94px;
 }
 
@@ -152,5 +157,55 @@
     background: rgba(117, 130, 48, 1);
     padding: 23px 34px;
     margin: 17px 551px;
-
 }
+
+@media (max-width: 800px) {
+
+    /* header logo */
+    .logo{
+        width: 10%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*1st section*/
+    
+
+
+    /*2nd section*/
+    .menu-section__para{
+        margin: -46px 0px;
+    }
+    .menu-section__title{
+        text-align: center;
+        font-size: 28px;
+    }    
+    .box-section__title{
+        padding: 0px 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .box-section__heading{
+        text-align: center;
+    }
+    .box-section__para{
+        text-align: center;
+        display: flex;
+        padding: 0px 0px;
+    }
+    .box-section{
+        height: auto;
+    }
+    .box-section__btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .box-section__image{
+        display: inline;
+        margin-top: 20px;
+
+    }
+    
+
+  }
