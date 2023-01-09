@@ -4,10 +4,31 @@
 }
 
 body{
-    background: gray;
+    background: rgb(255, 255, 255);
 }
 
 .container{
     display: flex;
     flex: row;
+}
+
+.container-para{
+    margin: 20px 20px;
+}
+
+.container-img{
+    margin: 20px 20px;
+}
+
+@media (max-width: 800px) {
+    .container-img{
+        position: absolute;
+        transform: scale(0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-para{
+        text-align: center;
+    }
 }
