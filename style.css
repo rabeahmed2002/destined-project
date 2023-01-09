@@ -110,7 +110,7 @@
 
 .box-section__para{
     padding: 0px 100px;
-    width: 50%;
+    max-width: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(137, 140, 123, 1);
     line-height: 20px;
@@ -192,6 +192,7 @@
         text-align: center;
         display: flex;
         padding: 0px 0px;
+        max-width: 100%;
     }
     .box-section{
         height: auto;
@@ -204,6 +205,7 @@
     .box-section__image{
         display: inline;
         margin-top: 20px;
+        position: relative;
 
     }
     
